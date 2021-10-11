@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- I use role for ARIA landmarks and aria-labels to make it more readable for screen readers-->
+
+<main role="main">
+    <div class="box-1">
+    <form role="form" id="form" aria-label="form to reserve a table">
+        <h1>Reserve your table</h1>
+        <p aria-label="fill in every form item">Please fill all the fields accurately to enable us to server you better!</p>
+        
+        <!-- You cant use tab to navigate through all the form fields-->
+    <div>
+            <!-- The legend tag is to define the caption for fieldset elements -->
+            <label for="firstName">First name</label>
+            <input name="firstName" id="firstName" aria-label="first name input">
+
+            <img src="success.svg" width="20px" height="20px" class="successIcon">
+            <img src="error.png" width="20px" height="20px" class="errorIcon">
+
+            <div class="error"></div>
+    </div>
+    <div>
+        <label for="lastName">Last name</label>
+         <input name="lastName" id="lastName" aria-label="last name input">
+      
+         <img src="success.svg" width="20px" height="20px" class="successIcon">
+         <img src="error.png" width="20px" height="20px" class="errorIcon">
+
+        <div class="error"></div>
+    </div>
+
+        <!--the label so users that can only use keyboard -->
+    <div>
+        <label for="email">E-mail</label>
+        <input name="email" id="email" aria-label="input for email">
+
+        <img src="success.svg" width="20px" height="20px" class="successIcon">
+            <img src="error.png" width="20px" height="20px" class="errorIcon">
+
+        <div class="error"></div>
+    </div>
+    <div>
+        <label for="phone">Phone</label>
+        <input name="phone" id="phone" aria-label="input for phone">
+
+        <img src="success.svg" width="20px" height="20px" class="successIcon">
+            <img src="error.png" width="20px" height="20px" class="errorIcon">
+
+        <div class="error"></div>
+    </div>
+    <div>
+        <label for="numberOfGuests">Number of Guests</label>
+        <input name="numberOfGuests" id="numberOfGuests" aria-label="input for number of guests">
+
+        <img src="success.svg" width="20px" height="20px" class="successIcon">
+            <img src="error.png" width="20px" height="20px" class="errorIcon">
+
+        <div class="error"></div>
+    </div>
+    <div>
+        <label for="pickDate">Pick your date</label>
+        <input type="date" form="pickDate" id="pickDate">
+
+        <img src="success.svg" width="20px" height="20px" class="successIcon">
+            <img src="error.png" width="20px" height="20px" class="errorIcon">
+
+        <div class="error"></div>
+    </div>
+   
+        <!-- here is the reserve button that submits the information gathered with an aria-label-->
+    <div>
+        <button id="btn" type="submit" value="Reserve" aria-label="submit reservation">Reserve</button>
+    </div>
+    </form>
+</div>
+<script src="main.js"></script>
+</main>
+    
+</body>
+</html>

@@ -1,0 +1,61 @@
+.box-1 {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+form div input {
+  width: 85%;
+  height: 30px;
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid #c4c4c4;
+  padding: 0 30px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form div {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  border: 2px solid #f2796e;
+}
+
+.error {
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+button {
+  width: 100%;
+  height: 40px;
+}
+/* css for error and success icons */
+form div img {
+  position: absolute;
+  padding: 10px;
+}
+
+.errorIcon .error {
+  color: red;
+}
+
+.successIcon {
+  color: green;
+}
+
+.error {
+  font-size: 14.5px;
+  margin-top: 5px;
+}
+
+.errorIcon,
+.successIcon {
+  right: 0;
+  opacity: 0;
+}
